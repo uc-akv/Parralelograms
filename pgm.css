@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  h1 {
+    color: #eee;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  /* .parallelograms {
+    display: flex;
+  } */
+  .parallelogram {
+    width: 1200px;
+    height: 280px;
+    background: rgb(225, 206, 204);
+    margin: 34px;
+  }
+  
+  .pgm {
+    transform: skew(-25deg);
+    display: inline-block;
+  }
+  
+  
+.dot {
+    height: 145px;
+    transform: skew(10deg,10deg);
+    width: 180px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  p{
+    width: 600px;
+    margin-left: 60px;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  
+ 
+    
