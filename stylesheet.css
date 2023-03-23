@@ -1,261 +1,211 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main::before {
-  content: "";
-  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg);
+#circle1,
+#circle2 {
   background-size: cover;
+}
+.main,
+.names {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.3;
+}
+body {
+  overflow: hidden;
+}
+.background,
+.circle {
+  background-repeat: no-repeat;
+}
+.card:hover .names,
+.names {
+  transition: 0.5s ease-in-out;
 }
 .main {
-  position: relative;
-  padding: 70px;
-  min-height: 745px;
-}
-
-.img {
-  margin: 0 2%;
-  float: left;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  transform: skew(25deg);
-  margin: 32px;
-}
-
-.image {
-  position: relative;
-  width: 25rem;
-}
-.img:hover {
-  filter: blur(2px);
-  font-size: 20px; 
-}
-
-.desc {
-    font-size: 20px;
-    margin: 19px;
-    font-weight: bolder;
-    transform: none;
-    position: absolute;
-    top: 65px;
-    bottom: 0;
-    left: 68px;
-    right: 0;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-  }
-
-  .image:hover .desc {
-    visibility: visible;
-  }
-
-body {
-  width: 100%;
-}
-.pgm {
-  display: flex;
-  justify-content: center;
-  
+  top: 0;
+  left: 0;
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg);
+  opacity: 0.6;
+  height: 105%;
+  width: 105%;
+  overflow: auto !important;
 }
 .container {
-  width: 100%;
-  margin: 1rem 2rem;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  background-color: red;
-  transform: skew(-25deg);
-  box-shadow: inset;
-  background-color: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(2px);
-}
-.container img {
-  margin-right: 2rem;
-  border-radius: 50%;
-  transform: skew(25deg);
-}
-.text {
   display: flex;
   flex-direction: column;
-  padding-left: 5rem;
-  transform: skew(25deg);
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  gap: 70px;
+  margin-top: 55px;
 }
-.container p {
-  transform: skew(25deg);
-  font-size: 1.0rem;
+.card {
+  padding: 50px;
+  max-width: 800px;
+  max-height: 480px;
+  background-color: #7fffd4;
+  transform: skew(-14deg);
+  background-color: #ffffff73;
+  backdrop-filter: blur(2px);
 }
-.heading {
-  font-weight: bold;
-  padding-bottom: 1rem;
-  font-size: 1.4rem;
+.circle,
+h4,
+p {
+  transform: skew(14deg);
 }
-.heading2{
-  font-size: 1.2rem;
+.circle {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
 }
-
-
-
-/*----------media query------------------*/
-/* @media(min-width:999px) and (max-width: 1400px){
-  
-  html{
-    font-size: 80%;
-  }
-} */
-
-
-/*----------------------- Big Screen/Dekstop-----------------------*/
-@media(min-width:999px) and (max-width: 1200px){
-  
-
-
-
-  html{
-    font-size: 80%;
-  }
-  .desc {
-    top: 40px;
-    left: 40px;
-  }
+p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  line-height: 22px;
 }
-
-/*------------------------- Laptops---------------------------------*/
-@media(min-width:769px) and (max-width: 998px){
-  html{
-    font-size: 65%;
-  }
-  .desc {
-    top: 50px;
-    left: 55px;
-  }
-  .image {
-    width: 33rem;
-  }
-
- }
-
- /*------------------------Tablets ------------------------------------*/
-@media(min-width:710px) and (max-width: 768px){
-  html{
-    font-size: 60%;
-  }
-  .desc {
-    top: 37px;
-    left: 40px;
-  }
-  .image {
-    width: 33rem;
-  }
- 
-
+h4 {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
-
-/*--------------------Smart Phone ------------------------*/
-@media(min-width:481px) and (max-width: 709px){
-
-  html{
-    font-size: 80%;
+#circle1 {
+  background-image: url(https://t4.ftcdn.net/jpg/02/79/66/93/360_F_279669366_Lk12QalYQKMczLEa4ySjhaLtx1M2u7e6.jpg);
+}
+#circle2 {
+  background-image: url(https://www.shutterstock.com/image-vector/portrait-young-asian-man-vector-260nw-1563535414.jpg);
+}
+.names {
+  display: inline-block;
+  top: 90px;
+  left: 49px;
+  opacity: 0%;
+  font-size: medium;
+}
+.card:hover .names {
+  color: #fff;
+  transform: translateY(-25px);
+  opacity: 100%;
+}
+@media (max-width: 768px) {
+  .card,
+  .circle,
+  h4,
+  p {
+    transform: skew(0);
   }
-  .desc {
-    font-size: 20px;
-    margin: 19px;
-    font-weight: bolder;
-    transform: none;
-    position: absolute;
-    top: 35px;
-    bottom: 0;
-    left: 180px;
-    right: 0;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-    transform: skew(0deg)!important;
+  .background {
+    height: 116%;
   }
-  .img{
-    transform: skew(0deg)!important;
-    height: 80%;
-    width: 25%;
-    margin: 10px;
-  }
-  .main{
-    padding: 8px;
-  }
-  .image {
-    width: 100%;
-    justify-content: center;
+  .card {
     display: flex;
-    float:none;
-  }
-  .text{
-    padding-left: 0rem;
-    transform: skew(0deg);
-  }
-  .container {
-    transform: skew(0deg);
     flex-direction: column;
+    align-items: center;
   }
+  .circle {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
   }
-
-
-
-/*--------------------Mobile -----------------------*/
-@media(max-width:480px){
-  
-  html{
-    font-size: 50%;
+  .names {
+    top: 90px;
+    left: 24px;
   }
-  .desc {
-    font-size: 20px;
-    margin: 19px;
-    font-weight: bolder;
-    transform: none;
-    position: absolute;
-    top: 35px;
-    bottom: 0;
-    left: 180px;
-    right: 0;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-    transform: skew(0deg)!important;
+}
+@media (max-width: 675px) {
+  .background {
+    height: 127%;
   }
-  .img{
-    transform: skew(0deg)!important;
-    height: 80%;
-    width: 25%;
-    margin: 10px;
-    margin-bottom: 18px;
+}
+@media (max-width: 559px) {
+  .card {
+    padding: 23px;
   }
-  .main{
-    padding: 8px;
+  .background {
+    height: 137%;
   }
-  .image {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    float:none;
+}
+@media (max-width: 460px) {
+  .background {
+    height: 152%;
   }
-  .text{
-    padding-left: 0rem;
-    transform: skew(0deg);
+}
+@media (max-width: 388px) {
+  .background {
+    height: 166%;
   }
-  .container {
-    transform: skew(0deg);
-    flex-direction: column;
+}
+@media (max-width: 376px) {
+  .circle {
+    margin-right: 6px;
   }
+  .heading {
+    text-align: center;
   }
-
-
-
+}
+@media (max-width: 358px) {
+  .background {
+    height: 177%;
+  }
+}
+@media (max-width: 268px) {
+  .background {
+    height: 180%;
+  }
+}
+@media (max-width: 230px) {
+  .circle {
+    display: none;
+  }
+}
+@media (max-width: 200px) {
+  .card {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 185px) {
+  .background {
+    height: 195%;
+  }
+  .card {
+    max-height: 532px;
+  }
+}
+@media (max-width: 179px) {
+  .background {
+    height: 185%;
+  }
+  .card {
+    padding: 2px 3px;
+  }
+}
+@media (max-width: 155px) {
+  .background {
+    height: 195%;
+  }
+  .card {
+    padding: 0 2px;
+  }
+}
+@media (max-width: 152px) {
+  .background {
+    height: 195%;
+  }
+  .card {
+    padding: 0 2px;
+    max-height: 575px;
+  }
+}
+@media (min-width: 770px) {
+  .card {
+    transform: skew(-14deg);
+  }
+  .circle,
+  h4,
+  p {
+    transform: skew(14deg);
+  }
+}
